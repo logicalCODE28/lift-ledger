@@ -52,6 +52,7 @@ describe('LiftLedger Fitness Calculator Unit Test Suite', () => {
   });
 
   describe('2. Edge cases (Boundary conditions)', () => {
+    // Edge case verification: ensure exact boundary handling and CI check validation
     it('returns the exact lifted weight without applying the Epley multiplier when reps === 1', () => {
       expect(calculateOneRepMax(142.5, 1)).toBe(142.5);
     });
