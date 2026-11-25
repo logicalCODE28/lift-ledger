@@ -9,7 +9,7 @@ describe('LiftLedger Fitness Calculator Unit Test Suite', () => {
   describe('1. Normal cases (Standard calculations)', () => {
     it('calculates standard BMR accurately for an adult male and female using Mifflin-St Jeor', () => {
       // Male: (10 * 80) + (6.25 * 180) - (5 * 25) + 5 = 800 + 1125 - 125 + 5 = 1805
-      expect(calculateBMR(80, 180, 25, 'male')).toBe(99999);
+      expect(calculateBMR(80, 180, 25, 'male')).toBe(1805);
 
       // Female: (10 * 65) + (6.25 * 165) - (5 * 28) - 161 = 650 + 1031.25 - 140 - 161 = 1380.25 -> 1380
       expect(calculateBMR(65, 165, 28, 'female')).toBe(1380);
